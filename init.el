@@ -132,6 +132,11 @@
             (message "init completed in %.2fms"
                      (sanityinc/time-subtract-millis after-init-time before-init-time))))
 
+;;----------------------------------------------------------------------------
+;; Use a better default font for Chinese and, maybe, Japanese
+;;----------------------------------------------------------------------------
+(set-fontset-font(frame-parameter nil 'font) 'han (font-spec :name "Hannotate SC" ))
+
 
 (provide 'init)
 
