@@ -50,6 +50,7 @@ by the :height face attribute."
 (global-set-key (kbd "C-M-=") 'sanityinc/increase-default-font-height)
 (global-set-key (kbd "C-M--") 'sanityinc/decrease-default-font-height)
 
+(custom-set-faces '(default ((t (:height 140)))))
 
 
 (provide 'init-fonts)
