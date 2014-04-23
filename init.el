@@ -25,32 +25,32 @@
 ;; Load configs for specific features and modes
 ;;----------------------------------------------------------------------------
 
-;; (require-package 'wgrep)
+(require-package 'wgrep)
 ;; (require-package 'project-local-variables)
-;; (require-package 'diminish)
+(require-package 'diminish)
 ;; (require-package 'scratch)
 ;; (require-package 'mwe-log-commands)
 ;; 
-;; (require 'init-frame-hooks)
-;; (require 'init-xterm)
-;; (require 'init-themes)
-;; (require 'init-osx-keys)
-;; (require 'init-gui-frames)
-;; (require 'init-proxies)
-;; (require 'init-dired)
-;; (require 'init-isearch)
-;; (require 'init-uniquify)
-;; (require 'init-ibuffer)
+;; (require 'init-frame-hooks)  ;; required in init-xterm
+;; (require 'init-xterm)        ;; config for emacs in xterm
+(require 'init-themes)
+(require 'init-osx-keys)
+(require 'init-gui-frames)
+;; (require 'init-proxies)      ;; use system proxies
+(require 'init-dired)
+(require 'init-isearch)
+(require 'init-uniquify)       ;; different name for buffers linking to same file
+(require 'init-ibuffer)
 ;; (require 'init-flycheck)
 ;; 
-;; (require 'init-recentf)
-;; (require 'init-ido)
+(require 'init-recentf)       ;; recent opened files
+(require 'init-ido)
 ;; (require 'init-hippie-expand)
 ;; (require 'init-auto-complete)
-;; (require 'init-windows)
-;; (require 'init-sessions)
-;; (require 'init-fonts)
-;; (require 'init-mmm)
+(require 'init-windows)
+(require 'init-sessions)
+(require 'init-fonts)
+(require 'init-mmm)      ;; multiple major modes
 ;; 
 ;; (require 'init-editing-utils)
 ;; 
@@ -64,7 +64,7 @@
 ;; (require 'init-erlang)
 ;; (require 'init-javascript)
 ;; (require 'init-php)
-;; (require 'init-org)
+(require 'init-org)
 ;; (require 'init-nxml)
 ;; (require 'init-css)
 ;; (require 'init-haml)
@@ -87,7 +87,7 @@
 ;; (require 'init-misc)
 ;; 
 ;; (require 'init-dash)
-;; (require 'init-ledger)
+;; (require 'init-ledger)     ;; ledger mode 
 
 ;; Extra packages which don't require any configuration
 ;; -----------------------------------------------------
@@ -98,7 +98,7 @@
 ;; (when *is-a-mac*
 ;;   (require-package 'osx-location))
 ;; (require-package 'regex-tool)
-;; (require-package 'twittering-mode)
+(require-package 'twittering-mode)
 
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient
