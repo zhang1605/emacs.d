@@ -52,7 +52,7 @@
 (require 'init-fonts)
 (require 'init-mmm)      ;; multiple major modes
 ;; 
-;; (require 'init-editing-utils)
+(require 'init-editing-utils)
 ;; 
 ;; (require 'init-darcs)
 ;; (require 'init-git)
